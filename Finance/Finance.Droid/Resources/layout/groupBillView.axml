@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="20px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/relativeLayout1"
+    p1:background="#f5f5f5"
+    p1:paddingRight="7dp"
+    p1:paddingLeft="7dp">
+    <TextView
+        p1:id="@+id/textTotal"
+        p1:layout_width="138.5dp"
+        p1:layout_height="25dp"
+        p1:textColor="@android:color/black"
+        p1:textStyle="bold"
+        p1:indicatorRight="80dp"
+        p1:gravity="center_vertical|right"
+        p1:text="total"
+        p1:layout_alignParentTop="true"
+        p1:layout_centerHorizontal="true"
+        p1:layout_alignParentRight="true"
+        p1:background="#f5f5f5" />
+    <TextView
+        p1:id="@+id/textGroup"
+        p1:layout_width="match_parent"
+        p1:layout_height="25dp"
+        p1:textColor="@android:color/black"
+        p1:textStyle="bold"
+        p1:indicatorRight="80dp"
+        p1:gravity="center_vertical"
+        p1:text="group"
+        p1:layout_alignParentTop="true"
+        p1:background="#f5f5f5"
+        p1:autoText="false"
+        p1:layout_toLeftOf="@id/textTotal"
+        p1:layout_marginLeft="30.0dp" />
+</RelativeLayout>

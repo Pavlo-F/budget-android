@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:paddingLeft="7dp"
+    p1:paddingRight="7dp"
+    p1:background="@color/textIcon">
+    <TextView
+        p1:text="Показать с"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="84.5dp"
+        p1:layout_height="40.0dp"
+        p1:id="@+id/textView1"
+        p1:gravity="center_vertical"
+        p1:textColor="@color/primaryText" />
+    <Button
+        p1:text="21.11.2016"
+        p1:layout_width="120.0dp"
+        p1:layout_height="40.0dp"
+        p1:layout_toRightOf="@id/textView1"
+        p1:id="@+id/btnBeginDate"
+        p1:gravity="center_horizontal|center_vertical"
+        p1:background="@android:color/transparent"
+        p1:textColor="@color/primaryText"
+        p1:textSize="21dp" />
+    <TextView
+        p1:text="по"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="34.0dp"
+        p1:layout_height="40.0dp"
+        p1:layout_toRightOf="@id/btnBeginDate"
+        p1:id="@+id/textView2"
+        p1:gravity="center_horizontal|center_vertical"
+        p1:textColor="@color/primaryText" />
+    <Button
+        p1:text="22.12.2016"
+        p1:layout_width="120.0dp"
+        p1:layout_height="40.0dp"
+        p1:layout_toRightOf="@id/textView2"
+        p1:id="@+id/btnEndDate"
+        p1:gravity="center_horizontal|center_vertical"
+        p1:background="@android:color/transparent"
+        p1:textColor="@color/primaryText"
+        p1:textSize="21dp" />
+    <Switch
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/btnBeginDate"
+        p1:id="@+id/statSwitch"
+        p1:textOff="Расходы"
+        p1:textOn="Доходы"
+        p1:layout_centerInParent="true"
+        p1:layout_marginBottom="5.0dp" />
+    <TextView
+        p1:text="Доход: 2342455,44 р."
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="120.0dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/statSwitch"
+        p1:id="@+id/textViewPositiv"
+        p1:textColor="@color/primaryText"
+        p1:textSize="11dp"
+        p1:layout_marginBottom="8.0dp" />
+    <TextView
+        p1:text="Расход: 346457457,44 р."
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="120.0dp"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textViewPositiv"
+        p1:id="@+id/textViewNegativ"
+        p1:layout_below="@id/statSwitch"
+        p1:textSize="11dp"
+        p1:textColor="@color/primaryText" />
+    <TextView
+        p1:text="Итог: 547568457457,65 р."
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textViewNegativ"
+        p1:id="@+id/textViewStatTotal"
+        p1:layout_below="@id/statSwitch"
+        p1:textSize="11dp"
+        p1:textColor="@color/primaryText"
+        p1:textStyle="bold" />
+    <ListView
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="match_parent"
+        p1:layout_below="@id/textViewPositiv"
+        p1:id="@+id/statisticListView" />
+</RelativeLayout>

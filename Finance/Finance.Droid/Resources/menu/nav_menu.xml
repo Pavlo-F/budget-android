@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_add"
+        android:title="Добавление" />
+    <item
+        android:id="@+id/nav_category"
+        android:title="Категории" />
+    <item
+        android:id="@+id/nav_billList"
+        android:title="Записи" />
+    <item
+        android:id="@+id/nav_statistic"
+        android:title="Статистика" />
+    <item
+        android:id="@+id/nav_exportDB"
+        android:title="База данных" />
+  </group>
+
+  <!--<item android:title="Sub items">
+    <menu>
+      <item
+          android:icon="@drawable/ic_home_1"
+          android:title="Sub item 1" />
+      <item
+          android:icon="@drawable/ic_home_2"
+          android:title="Sub item 2" />
+    </menu>
+  </item>-->
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/relativeLayout1"
+    p1:background="@color/textIcon"
+    p1:paddingLeft="7dp"
+    p1:paddingRight="7dp">
+    <ImageButton
+        p1:src="@drawable/ic_more_vert_black_18dp"
+        p1:layout_width="35dp"
+        p1:layout_height="35dp"
+        p1:id="@+id/btnAction"
+        p1:layout_alignParentRight="true"
+        p1:background="@android:color/transparent"
+        p1:layout_marginLeft="5.0dp"
+        p1:scaleType="fitXY" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="90dp"
+        p1:layout_height="35dp"
+        p1:layout_toLeftOf="@id/btnAction"
+        p1:id="@+id/textViewPrice"
+        p1:gravity="center_vertical|right"
+        p1:textColor="@color/primaryText" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="match_parent"
+        p1:layout_height="20dp"
+        p1:layout_toLeftOf="@id/textViewPrice"
+        p1:id="@+id/textViewBill"
+        p1:textColor="@color/primaryText"
+        p1:gravity="center_vertical"
+        p1:textSize="17dp"
+        p1:singleLine="true"
+        p1:ellipsize="end" />
+    <TextView
+        p1:text="Text"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toLeftOf="@id/textViewPrice"
+        p1:id="@+id/textViewCatigory"
+        p1:layout_below="@id/textViewBill"
+        p1:textSize="12dp"
+        p1:singleLine="true"
+        p1:ellipsize="end" />
+</RelativeLayout>

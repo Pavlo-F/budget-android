@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/AddLayout"
+    p1:paddingRight="7dp"
+    p1:paddingLeft="7dp"
+    p1:background="@color/textIcon"
+    p1:paddingBottom="7dp">
+    <TextView
+        p1:text="Платёж / Покупка:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textCost" />
+    <AutoCompleteTextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textCost"
+        p1:id="@+id/autoCompleteTextBill" />
+    <TextView
+        p1:text="Сумма:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="151.5dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/autoCompleteTextBill"
+        p1:id="@+id/textTotal" />
+    <EditText
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:layout_below="@id/textTotal"
+        p1:id="@+id/textTotalValue"
+        p1:inputType="numberDecimal"
+        p1:maxLength="10"
+        p1:numeric="decimal"
+        p1:layout_alignRight="@id/textTotal" />
+    <TextView
+        p1:text="Категория:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/textTotal"
+        p1:id="@+id/textView1"
+        p1:layout_below="@id/autoCompleteTextBill" />
+    <TextView
+        p1:text="Операция:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textTotalValue"
+        p1:id="@+id/textView2"
+        p1:layout_toLeftOf="@id/textView1" />
+    <Spinner
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp"
+        p1:layout_below="@id/textView1"
+        p1:id="@+id/spinnerCategory"
+        p1:layout_toRightOf="@id/textTotalValue"
+        p1:layout_above="@id/textView2"
+        p1:layout_marginRight="40dp" />
+    <TextView
+        p1:text="Дата внесения:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/spinnerCategory"
+        p1:id="@+id/textView3"
+        p1:layout_toRightOf="@id/textView2" />
+    <ImageButton
+        p1:src="@drawable/ic_add_box_black_48dp"
+        p1:layout_width="40dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/btnAddCategory"
+        p1:layout_below="@id/textView1"
+        p1:layout_alignParentRight="true"
+        p1:layout_above="@id/textView3"
+        p1:background="@android:color/transparent"
+        p1:scaleType="fitXY" />
+    <Spinner
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:textSize="25dp"
+        p1:id="@+id/spinnerOperation"
+        p1:layout_toLeftOf="@id/textView1"
+        p1:layout_below="@id/textView2" />
+    <Button
+        p1:text="Дата"
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:textSize="25dp"
+        p1:layout_toRightOf="@id/spinnerOperation"
+        p1:id="@+id/btnDate"
+        p1:layout_below="@id/textView3"
+        p1:background="@android:color/transparent" />
+    <ImageView
+        p1:src="@color/divider"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:layout_below="@id/spinnerOperation"
+        p1:id="@+id/photoView"
+        p1:layout_marginRight="100.0dp" />
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        p1:src="@drawable/ic_add_a_photo_black_48dp"
+        p1:layout_width="90dp"
+        p1:layout_height="100dp"
+        p1:layout_below="@id/btnDate"
+        p1:id="@+id/btnTakePhoto"
+        p1:layout_alignParentRight="true"
+        p1:background="@android:color/transparent"
+        p1:padding="0dp"
+        p1:scaleType="fitXY"
+        p1:layout_marginRight="7.0dp" />
+    <ImageButton
+        p1:src="@drawable/ic_save_black_48dp"
+        p1:layout_width="100dp"
+        p1:layout_height="100dp"
+        p1:layout_below="@id/btnTakePhoto"
+        p1:id="@+id/btnSaveBill"
+        p1:layout_alignParentRight="true"
+        p1:background="@android:color/transparent"
+        p1:scaleType="fitXY"
+        p1:padding="0dp" />
+</RelativeLayout>
