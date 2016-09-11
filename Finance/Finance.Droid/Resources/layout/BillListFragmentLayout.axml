@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <ExpandableListView
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/expListView"
-        android:background="@color/textIcon" />
-</LinearLayout>
+    android:background="@color/textIcon">
+  <AutoCompleteTextView
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:id="@+id/SearchEditText"
+      android:layout_marginRight="43.5dp"
+      android:layout_alignParentLeft="true" />
+  <ImageButton
+      android:layout_width="45.0dp"
+      android:layout_height="40dp"
+      android:id="@+id/SearchBtn"
+      android:layout_alignParentRight="true"
+      android:src="@android:drawable/ic_search_category_default"
+      android:scaleType="centerInside"
+      android:background="@android:color/transparent" />
+  <ExpandableListView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/expListView"
+      android:background="@color/textIcon"
+      android:layout_below="@id/SearchEditText" />
+</RelativeLayout>

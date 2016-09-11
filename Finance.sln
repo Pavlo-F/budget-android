@@ -11,7 +11,6 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Finance\Finance\C
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Finance\Finance\Finance.projitems*{76509643-07d2-4a9a-8d0e-f37645bea435}*SharedItemsImports = 4
 		Finance\Finance\Finance.projitems*{15fd60f7-e0c4-438b-8a96-f6e4eb635166}*SharedItemsImports = 4
 		Finance\Finance\Finance.projitems*{5d57212e-678f-4baf-9c75-3054f53c319d}*SharedItemsImports = 13
 	EndGlobalSection
@@ -66,12 +65,14 @@ Global
 		{15FD60F7-E0C4-438B-8A96-F6E4EB635166}.Release|x86.ActiveCfg = Release|Any CPU
 		{15FD60F7-E0C4-438B-8A96-F6E4EB635166}.Release|x86.Build.0 = Release|Any CPU
 		{15FD60F7-E0C4-438B-8A96-F6E4EB635166}.Release|x86.Deploy.0 = Release|Any CPU
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|x86.ActiveCfg = AppStore|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|Any CPU.Build.0 = Release|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhone.Build.0 = Release|iPhone
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|x86.ActiveCfg = Release|iPhoneSimulator
+		{76509643-07D2-4A9A-8D0E-F37645BEA435}.AppStore|x86.Build.0 = Release|iPhoneSimulator
 		{76509643-07D2-4A9A-8D0E-F37645BEA435}.Debug|Any CPU.ActiveCfg = Debug|iPhone
 		{76509643-07D2-4A9A-8D0E-F37645BEA435}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{76509643-07D2-4A9A-8D0E-F37645BEA435}.Debug|iPhone.Build.0 = Debug|iPhone

@@ -10,7 +10,7 @@ namespace Common
         public static string DATABASE_NAME = "BillDatabase";
         private static int DATABASE_VERSION = 5;
 
-            // Table Names
+        // Table Names
         private static string TABLE_BILL = "Bill";
         private static string TABLE_CATEGORY = "Category";
 
@@ -42,7 +42,7 @@ namespace Common
 
         public static DatabaseHelper Instance
         {
-           get { return sInstance; }
+            get { return sInstance; }
         }
 
 
@@ -50,7 +50,7 @@ namespace Common
         {
             database.BeginTransaction();
             try
-            {            
+            {
                 database.Insert(category);
                 database.Commit();
                 return true;
@@ -100,7 +100,7 @@ namespace Common
                 database.Delete<Category>(itemId);
 
                 var tmp = database.Table<Bill>().Where(i => i.id_category == itemId);
-                for(int i = 0; i < tmp.Count(); i++)
+                for (int i = 0; i < tmp.Count(); i++)
                 {
                     tmp.ElementAt(i).id_category = 0;
                 }
@@ -121,7 +121,7 @@ namespace Common
             database.BeginTransaction();
             try
             {
-                database.Update(new Category {id = Id, name = Name });
+                database.Update(new Category { id = Id, name = Name });
                 database.Commit();
                 return true;
             }
@@ -173,16 +173,29 @@ namespace Common
                 database.Rollback();
                 return false;
             }
-   
+
         }
 
 
         public List<string> getBillsName()
         {
             List<string> names = new List<string>();
-            List<Bill> list = database.Query<Bill>("SELECT DISTINCT "+ KEY_BILL_NAME + " FROM " + TABLE_BILL);
+            List<Bill> list = database.Query<Bill>("SELECT DISTINCT " + KEY_BILL_NAME + " FROM " + TABLE_BILL);
 
-            foreach(Bill item in list)
+            foreach (Bill item in list)
+            {
+                names.Add(item.name);
+            }
+
+            return names;
+        }
+
+        public List<string> getCategoriesName()
+        {
+            List<string> names = new List<string>();
+            List<Bill> list = database.Query<Bill>("SELECT DISTINCT " + KEY_CATEGORY_NAME + " FROM " + TABLE_CATEGORY);
+
+            foreach (Bill item in list)
             {
                 names.Add(item.name);
             }
@@ -216,13 +229,12 @@ namespace Common
         public List<Bill> getAllBills(string date)
         {
             string BILL_SELECT_QUERY = string.Format("SELECT *, {0} FROM {1} WHERE {2} = '{3}' ORDER BY date DESC",
-            new string[] {"strftime('%d.%m.%Y', date / 1000, 'unixepoch') as dateBill", TABLE_BILL, "dateBill", date });
+            new string[] { "strftime('%d.%m.%Y', date / 1000, 'unixepoch') as dateBill", TABLE_BILL, "dateBill", date });
 
             List<Bill> bills = database.Query<Bill>(BILL_SELECT_QUERY);
 
             return bills;
         }
-
 
         public bool deleteBill(Bill bill)
         {
