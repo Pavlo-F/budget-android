@@ -138,11 +138,11 @@ namespace Finance.Droid.Fragments
             totalView.Text = "»тог: " + total.ToString("F") + " р.";
             if (total >= 0)
             {
-                totalView.SetTextColor(new Android.Graphics.Color(0, 180, 12, 100)); // green
+                totalView.SetTextColor(new Android.Graphics.Color(0, 180, 12, 200)); // green
             }
             else
             {
-                totalView.SetTextColor(new Android.Graphics.Color(180, 0, 0, 100)); // red
+                totalView.SetTextColor(new Android.Graphics.Color(180, 0, 0, 200)); // red
             }
         }
 

@@ -36,8 +36,18 @@ namespace Finance.Droid.Adapters
         {
             mContext = context;
             mGroups = groups;
-            //mAdapter = this;
-            //mActivity = activity;
+        }
+
+        public List<List<Bill>> Groups
+        {
+            get
+            {
+                return mGroups;
+            }
+            set
+            {
+                mGroups = value;
+            }
         }
 
         public override int GroupCount
@@ -61,10 +71,6 @@ namespace Finance.Droid.Adapters
             return null;
         }
 
-        //public  Bill GetChildBill(int groupPosition, int childPosition)
-        //{
-        //    return mGroups[groupPosition][childPosition];
-        //}
 
         public override long GetChildId(int groupPosition, int childPosition)
         {
@@ -81,10 +87,6 @@ namespace Finance.Droid.Adapters
             return null;
         }
 
-        //public List<Bill> GetGroupBill(int groupPosition)
-        //{
-        //    return mGroups[groupPosition];
-        //}
 
         public override long GetGroupId(int groupPosition)
         {
@@ -118,10 +120,17 @@ namespace Finance.Droid.Adapters
 
             double totalPrice = 0;
             List<Bill> billGroupList = mGroups[groupPosition];
+            var isProfitExist = false;
+
 
             foreach (Bill item in billGroupList)
             {
                 totalPrice += item.price;
+
+                if(item.price > 0)
+                {
+                    isProfitExist = true;
+                }
             }
 
             long date = billGroupList[0].date * 10000 + (new DateTime(1970, 1, 1).Ticks);
@@ -129,7 +138,19 @@ namespace Finance.Droid.Adapters
             string vv = groupDate.ToString("ddd dd MMMM yyyy", CultureInfo.CreateSpecificCulture("ru-RU"));
             textTotal.Text = totalPrice.ToString("F") + " ð.";
             textGroup.Text = vv;
-            
+
+            if (totalPrice > 0)
+            {
+                textTotal.SetTextColor(new Android.Graphics.Color(0, 180, 12, 200)); // green
+            }
+            else if (isProfitExist)
+            {
+                textTotal.SetTextColor(new Android.Graphics.Color(255, 165, 0, 200)); // orange
+            }
+            else
+            {
+                textTotal.SetTextColor(Android.Graphics.Color.Black);
+            }
 
             return convertView;
         }

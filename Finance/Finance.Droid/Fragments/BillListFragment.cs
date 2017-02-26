@@ -17,6 +17,7 @@ namespace Finance.Droid.Fragments
         ImageButton searchBtn;
         AutoCompleteTextView searchText;
         EventHandler searchDelegat = null;
+        ExpListAdapter adapterExp;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -48,7 +49,7 @@ namespace Finance.Droid.Fragments
             (Activity, Resource.Layout.support_simple_spinner_dropdown_item, names);
             searchText.Adapter = adapterBill;
 
-            ExpListAdapter adapterExp = new ExpListAdapter(Activity, getGroups(null));
+            adapterExp = new ExpListAdapter(Activity, getGroups(null, 0));
             listView.SetAdapter(adapterExp);
 
             if (!searchBtn.HasOnClickListeners)
@@ -57,7 +58,7 @@ namespace Finance.Droid.Fragments
                 {
                     try
                     {
-                        adapterExp = new ExpListAdapter(Activity, getGroups(searchText.Text));
+                        adapterExp = new ExpListAdapter(Activity, getGroups(searchText.Text, 0));
                         listView.SetAdapter(adapterExp);
                     }
                     catch
@@ -69,16 +70,31 @@ namespace Finance.Droid.Fragments
                 searchBtn.Click += searchDelegat;
             }
 
+            listView.ScrollStateChanged += ListView_ScrollStateChanged;
+
             return tmp;
         }
 
+        private void ListView_ScrollStateChanged(object sender, AbsListView.ScrollStateChangedEventArgs e)
+        {
+            var localListView = sender as ExpandableListView;
+            var tmp = localListView.LastVisiblePosition - localListView.HeaderViewsCount - localListView.FooterViewsCount;
 
-        private List<List<Bill>> getGroups(string searchStr)
+            if (e.ScrollState == ScrollState.Idle && tmp >= localListView.Adapter.Count - 1)
+            {
+                var newGroups = getGroups(null, localListView.Adapter.Count);
+                adapterExp.Groups.AddRange(newGroups);
+                adapterExp.NotifyDataSetChanged();
+            }
+        }
+
+
+        private List<List<Bill>> getGroups(string searchStr, int skipRows)
         {
             List<List<Bill>> groups = new List<List<Bill>>();
             List<string> groupList;
             List<Bill> children = null;
-            groupList = DatabaseHelper.Instance.getBillsGroups();
+            groupList = DatabaseHelper.Instance.getBillsGroups(skipRows, 30);
 
             if (string.IsNullOrEmpty(searchStr))
             {

@@ -203,13 +203,13 @@ namespace Common
             return names;
         }
 
-        public List<string> getBillsGroups()
+        public List<string> getBillsGroups(int skipRows, int limitRows)
         {
             List<string> groups = new List<string>();
 
             // note используется для того чтобы получить дату в текстовом виде
-            string BILL_SELECT_QUERY = string.Format("SELECT {0}, date FROM {1} GROUP BY {2} ORDER BY date DESC",
-                    new string[] { "strftime('%d.%m.%Y', date / 1000, 'unixepoch') as note", TABLE_BILL, "note" });
+            string BILL_SELECT_QUERY = string.Format("SELECT {0}, date FROM {1} GROUP BY {2} ORDER BY date DESC LIMIT {3} OFFSET {4}",
+                    new string[] { "strftime('%d.%m.%Y', date / 1000, 'unixepoch') as note", TABLE_BILL, "note", limitRows.ToString(), skipRows.ToString() });
 
             List<Bill> list = database.Query<Bill>(BILL_SELECT_QUERY);
             try
