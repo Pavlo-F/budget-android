@@ -93,11 +93,12 @@ namespace Finance.Droid.Fragments
         {
             List<List<Bill>> groups = new List<List<Bill>>();
             List<string> groupList;
-            List<Bill> children = null;
-            groupList = DatabaseHelper.Instance.getBillsGroups(skipRows, 30);
+            List<Bill> children = null;     
 
             if (string.IsNullOrEmpty(searchStr))
             {
+                groupList = DatabaseHelper.Instance.getBillsGroups(skipRows, 30);
+
                 foreach (string item in groupList)
                 {
                     children = DatabaseHelper.Instance.getAllBills(item);
@@ -105,7 +106,10 @@ namespace Finance.Droid.Fragments
                 }
             }
             else
-            {   // такой метод поиска был использован в связи с проблемами оператора LIKE в SQLite и кириллицей
+            {
+                groupList = DatabaseHelper.Instance.getBillsGroups(skipRows, int.MaxValue);
+
+                // такой метод поиска был использован в связи с проблемами оператора LIKE в SQLite и кириллицей
                 Category tmpCat = DatabaseHelper.database.Table<Category>().Where(c => c.name == searchStr).FirstOrDefault();
                 List<Bill> tmpBill = new List<Bill>();
 
