@@ -1774,8 +1774,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0073
 			public const int SearchEditText = 2131427443;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int action0 = 2131427466;
+			// aapt resource value: 0x7f0b0089
+			public const int action0 = 2131427465;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int action_bar = 2131427413;
@@ -1801,8 +1801,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0056
 			public const int action_context_bar = 2131427414;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int action_divider = 2131427470;
+			// aapt resource value: 0x7f0b008d
+			public const int action_divider = 2131427469;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1843,14 +1843,14 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b006d
 			public const int btnAddCategory = 2131427437;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int btnBeginDate = 2131427481;
+			// aapt resource value: 0x7f0b0098
+			public const int btnBeginDate = 2131427480;
 			
 			// aapt resource value: 0x7f0b006f
 			public const int btnDate = 2131427439;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int btnEndDate = 2131427482;
+			// aapt resource value: 0x7f0b0099
+			public const int btnEndDate = 2131427481;
 			
 			// aapt resource value: 0x7f0b0072
 			public const int btnSaveBill = 2131427442;
@@ -1861,8 +1861,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int buttonPanel = 2131427403;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int cancel_action = 2131427467;
+			// aapt resource value: 0x7f0b008a
+			public const int cancel_action = 2131427466;
 			
 			// aapt resource value: 0x7f0b0079
 			public const int categoryListView = 2131427449;
@@ -1879,8 +1879,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int checkbox = 2131427405;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int chronometer = 2131427473;
+			// aapt resource value: 0x7f0b0090
+			public const int chronometer = 2131427472;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int clip_horizontal = 2131427377;
@@ -1894,8 +1894,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0046
 			public const int contentPanel = 2131427398;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int content_frame = 2131427464;
+			// aapt resource value: 0x7f0b0087
+			public const int content_frame = 2131427463;
 			
 			// aapt resource value: 0x7f0b004a
 			public const int custom = 2131427402;
@@ -1912,14 +1912,14 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0078
 			public const int delCatBtn = 2131427448;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int deleteItem = 2131427495;
+			// aapt resource value: 0x7f0b00a6
+			public const int deleteItem = 2131427494;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int disableHome = 2131427341;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int drawer_layout = 2131427461;
+			// aapt resource value: 0x7f0b0084
+			public const int drawer_layout = 2131427460;
 			
 			// aapt resource value: 0x7f0b0077
 			public const int editCatBtn = 2131427447;
@@ -1930,8 +1930,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int end_padder = 2131427478;
+			// aapt resource value: 0x7f0b0095
+			public const int end_padder = 2131427477;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int enterAlways = 2131427362;
@@ -1951,8 +1951,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b004c
 			public const int expanded_menu = 2131427404;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int exportDBButton = 2131427458;
+			// aapt resource value: 0x7f0b0081
+			public const int exportDBButton = 2131427457;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int fill = 2131427379;
@@ -1981,20 +1981,17 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b003d
 			public const int image = 2131427389;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int importDBFromOldVersion = 2131427457;
-			
-			// aapt resource value: 0x7f0b0095
-			public const int info = 2131427477;
+			// aapt resource value: 0x7f0b0094
+			public const int info = 2131427476;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int left = 2131427373;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int line1 = 2131427471;
+			// aapt resource value: 0x7f0b008e
+			public const int line1 = 2131427470;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int line3 = 2131427475;
+			// aapt resource value: 0x7f0b0092
+			public const int line3 = 2131427474;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
@@ -2002,11 +1999,11 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b003f
 			public const int list_item = 2131427391;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int media_actions = 2131427469;
+			// aapt resource value: 0x7f0b008c
+			public const int media_actions = 2131427468;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int menugroup1 = 2131427493;
+			// aapt resource value: 0x7f0b00a4
+			public const int menugroup1 = 2131427492;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -2017,26 +2014,26 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0014
 			public const int multiply = 2131427348;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int nameView = 2131427479;
+			// aapt resource value: 0x7f0b0096
+			public const int nameView = 2131427478;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int nav_add = 2131427488;
-			
-			// aapt resource value: 0x7f0b00a2
-			public const int nav_billList = 2131427490;
+			// aapt resource value: 0x7f0b009f
+			public const int nav_add = 2131427487;
 			
 			// aapt resource value: 0x7f0b00a1
-			public const int nav_category = 2131427489;
+			public const int nav_billList = 2131427489;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int nav_exportDB = 2131427492;
+			// aapt resource value: 0x7f0b00a0
+			public const int nav_category = 2131427488;
 			
 			// aapt resource value: 0x7f0b00a3
-			public const int nav_statistic = 2131427491;
+			public const int nav_exportDB = 2131427491;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int nav_view = 2131427465;
+			// aapt resource value: 0x7f0b00a2
+			public const int nav_statistic = 2131427490;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int nav_view = 2131427464;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int never = 2131427359;
@@ -2053,8 +2050,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int parentPanel = 2131427394;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int percentView = 2131427480;
+			// aapt resource value: 0x7f0b0097
+			public const int percentView = 2131427479;
 			
 			// aapt resource value: 0x7f0b0070
 			public const int photoView = 2131427440;
@@ -2131,8 +2128,8 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0011
 			public const int showHome = 2131427345;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int showPhoto = 2131427494;
+			// aapt resource value: 0x7f0b00a5
+			public const int showPhoto = 2131427493;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int showTitle = 2131427346;
@@ -2164,14 +2161,14 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b002f
 			public const int start = 2131427375;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int statSwitch = 2131427483;
+			// aapt resource value: 0x7f0b009a
+			public const int statSwitch = 2131427482;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int statisticListView = 2131427487;
+			// aapt resource value: 0x7f0b009e
+			public const int statisticListView = 2131427486;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int status_bar_latest_event_content = 2131427468;
+			// aapt resource value: 0x7f0b008b
+			public const int status_bar_latest_event_content = 2131427467;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submit_area = 2131427424;
@@ -2179,17 +2176,17 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int text = 2131427476;
+			// aapt resource value: 0x7f0b0093
+			public const int text = 2131427475;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int text2 = 2131427474;
+			// aapt resource value: 0x7f0b0091
+			public const int text2 = 2131427473;
 			
 			// aapt resource value: 0x7f0b0065
 			public const int textCost = 2131427429;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int textGroup = 2131427460;
+			// aapt resource value: 0x7f0b0083
+			public const int textGroup = 2131427459;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int textSpacerNoButtons = 2131427400;
@@ -2215,23 +2212,23 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b007e
 			public const int textViewCatigory = 2131427454;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int textViewDB = 2131427459;
-			
-			// aapt resource value: 0x7f0b009d
-			public const int textViewNegativ = 2131427485;
+			// aapt resource value: 0x7f0b0082
+			public const int textViewDB = 2131427458;
 			
 			// aapt resource value: 0x7f0b009c
-			public const int textViewPositiv = 2131427484;
+			public const int textViewNegativ = 2131427484;
+			
+			// aapt resource value: 0x7f0b009b
+			public const int textViewPositiv = 2131427483;
 			
 			// aapt resource value: 0x7f0b007c
 			public const int textViewPrice = 2131427452;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int textViewStatTotal = 2131427486;
+			// aapt resource value: 0x7f0b009d
+			public const int textViewStatTotal = 2131427485;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int time = 2131427472;
+			// aapt resource value: 0x7f0b008f
+			public const int time = 2131427471;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int title = 2131427393;
@@ -2239,11 +2236,11 @@ namespace Finance.Droid
 			// aapt resource value: 0x7f0b0044
 			public const int title_template = 2131427396;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int toolbar = 2131427463;
-			
 			// aapt resource value: 0x7f0b0086
-			public const int toolbar_layout = 2131427462;
+			public const int toolbar = 2131427462;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int toolbar_layout = 2131427461;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int top = 2131427376;

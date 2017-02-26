@@ -9,20 +9,13 @@
     p1:minWidth="25px"
     p1:minHeight="25px">
     <Button
-        p1:text="Импорт БД из бекапа старой версии"
-        p1:layout_width="wrap_content"
-        p1:layout_height="wrap_content"
-        p1:id="@+id/importDBFromOldVersion"
-        p1:textAllCaps="false" />
-    <Button
         p1:text="Экспорт БД"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:id="@+id/exportDBButton"
         p1:layout_alignParentLeft="true"
         p1:layout_toLeftOf="@id/exportDBButton"
-        p1:textAllCaps="false"
-        p1:layout_below="@id/importDBFromOldVersion" />
+        p1:textAllCaps="false" />
     <TextView
         p1:text="Medium Text"
         p1:textAppearance="?android:attr/textAppearanceSmall"

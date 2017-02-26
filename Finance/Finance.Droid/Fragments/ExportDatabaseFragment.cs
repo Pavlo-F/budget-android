@@ -1,4 +1,3 @@
-using Android.Database;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.App;
@@ -6,9 +5,7 @@ using Android.Views;
 using Android.Widget;
 using Common;
 using Finance.Droid.Activities;
-using Finance.Droid.Adapters;
 using System;
-using System.Collections.Generic;
 
 namespace Finance.Droid.Fragments
 {
@@ -39,42 +36,8 @@ namespace Finance.Droid.Fragments
             TextView dataBasePath = tmp.FindViewById<TextView>(Resource.Id.textViewDB);
             dataBasePath.Text = "База данных будет сохранена в " + App._dir.ToString() + "/" + DatabaseHelper.DATABASE_NAME;
 
-            Button importDBFromOldVersion = tmp.FindViewById<Button>(Resource.Id.importDBFromOldVersion);
-            importDBFromOldVersion.Click += ImportDBFromOldVersion_Click;
-
             return tmp;
         }
-
-        private void ImportDBFromOldVersion_Click(object sender, EventArgs e)
-        {
-            Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(Activity);
-            alert.SetTitle("Импорт");
-            alert.SetMessage("Внимание, данные будут перезаписаны. Вы действительно хотите импортировать базу данных?");
-
-            alert.SetPositiveButton("ОК", (dialog, whichButton) =>
-            {
-                try
-                {
-                    string storage = Android.OS.Environment.ExternalStorageDirectory.ToString();
-                    string db = DatabaseHelper.database.DatabasePath;
-                    System.IO.File.Copy(storage + "/" + DatabaseHelper.DATABASE_NAME, db, true);
-                    Snackbar.Make(MainActivity.drawerLayout, "База данных импортирована", Snackbar.LengthLong).Show();
-                }
-                catch (Exception exp)
-                {
-                    Snackbar.Make(MainActivity.drawerLayout, "Ошибка импорта", Snackbar.LengthLong).Show();
-                }
-            });
-
-            alert.SetNegativeButton("Отмена", (dialog, whichButton) =>
-            {
-                // what ever you want to do with No option.
-            });
-
-            alert.Show();
-
-        }
-
 
         private void ExportDB_Click(object sender, EventArgs e)
         {
